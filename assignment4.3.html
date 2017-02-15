@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .myclass{
+        width:100px;
+        height:100px;
+        margin:auto;
+        background-color:green;
+        animation-duration: 5s;
+        animation-name: example;
+        animation-play-state: paused;
+    }
+    .myclass b{
+        position: absolute;
+        top:8%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+        }
+    .myclass:hover{
+        animation-play-state: running;
+
+    }
+    @keyframes example{
+        0%{background-color: green;}
+        25%{background-color: orange;border-radius:15px;}
+        50%{background-color: orange;border-radius:25px;}
+        100%{background-color: orange;border-radius:50px;}
+    }
+    </style>
+</head>
+<body>
+    <div class="myclass">
+        <b>BOX</b>
+    </div>
+</body>
+</html>
